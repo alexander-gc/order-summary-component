@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --p-pale-blue: hsl(225, 100%, 94%);
+    --p-dark-blue: hsl(245, 75%, 52%);
+
+    --n-pale-blue:hsl(225, 100%, 98%)
+    --n-desaturated-blue: hsl(224, 23%, 55%)
+    --n-dark-blue: hsl(223, 47%, 23%) 
+}
+html,
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100%;
+}
+
+body{
+    background-color: var(--p-pale-blue);
+    background-image: url(pattern-background-dektop.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+.sumaryContainer{
+    width: 450px;
+    background-color: #fff;
+    border-radius: 1rem;
+    color: var(--p-dark-blue);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.sumaryTitle{
+    padding: 2rem 0 1rem 0;
+    font-weight: 900;
+}
+
+.sumaryDescription{
+    color: var(-n-desaturated-blue);
+    padding-bottom: 1rem;
+    font-size: 16px;
+}
+
+.hero{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.planContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--n-pale-blue);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.plan{
+    display: flex;
+}
+
+.planInfo{
+    padding-left: 1rem;
+    text-align: center;
+}
+.btn{
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.changeBtn{
+    color: var(--p-dark-blue);
+}
+.proceedBtn{
+    background-color: var(--p-dark-blue);
+    color: #fff;
+}
+.cancelBtn{
+    margin-bottom: 1rem;
+    color: var(--n-desaturated-blue);
+}
+
+/* */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
